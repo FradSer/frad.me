@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024px" height="170px" viewBox="0 0 1024 170" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>header</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="-2.22044605e-14%" y1="100%" x2="100%" y2="1.11022302e-14%" id="linearGradient-1">
+            <stop stop-color="#59E8E5" offset="0%"></stop>
+            <stop stop-color="#DED0CE" offset="49.8266103%"></stop>
+            <stop stop-color="#FF5A5A" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" fill="url(#linearGradient-1)">
+            <g id="header">
+                <path d="M1024,30 C976.050549,81.5116072 422.5,88 270,106 C168.333333,118 78.3333333,139.333333 0,170 L0,0 L1024,0 C1024,20 1024,30 1024,30 Z" id="Mask"></path>
+            </g>
+        </g>
+    </g>
+</svg>
