@@ -1,9 +1,9 @@
 @font-face {
     font-family: 'SF Mono';
-    src: url('SFMono-Regular.eot');
-    src: url('SFMono-Regular.eot?#iefix') format('embedded-opentype'),
-        url('SFMono-Regular.woff') format('woff'),
-        url('SFMono-Regular.ttf') format('truetype');
+    src: url('../font/SFMono-Regular.eot');
+    src: url('../font/SFMono-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../font/SFMono-Regular.woff') format('woff'),
+        url('../font/SFMono-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
 }
