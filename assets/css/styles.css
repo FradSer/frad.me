@@ -30,7 +30,7 @@ a:link { text-decoration: none;}
 }
 
 .header {
-    background: url("../images/header.svg") round;
+    background: url("../images/header.png") round;
     background-size: cover;
     position: absolute;
     height: 170px;
