@@ -144,7 +144,7 @@ $(document).ready(function() {
             }
         }, 400)
     }
-    $(".arrows").click(function(){
-    alert("Thanks for your attention. W.I.P.");
-});
+    $(".arrows").click(function() {
+        alert("Thanks for your attention. W.I.P.");
+    });
 });
