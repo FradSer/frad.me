@@ -171,6 +171,7 @@ margin-top: -12px;
 }
 
 .arrows {
+    display: none;
     width: 88px;
     height: 58px;
     background-image: url(../images/arrows.svg);
