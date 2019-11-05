@@ -1,0 +1,558 @@
+h1 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: 'PT Serif', serif;
+  line-height: 42px;
+}
+
+h4 {
+  font-size: 18px;
+  line-height: 27px;
+}
+
+p {
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 29px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.main {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+.body {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  grid-auto-flow: row;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  grid-template-areas: ".";
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  -ms-grid-rows: auto 16px auto;
+  grid-template-rows: auto auto;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.explanation {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  z-index: 100;
+  display: none;
+  height: 400px;
+  max-width: 960px;
+  margin: auto 10%;
+  padding-right: 50px;
+  padding-left: 50px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 2px solid #000;
+  border-radius: 16px;
+  background-color: red;
+}
+
+.freedom-to-frad {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 1em;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.freedom-a {
+  display: none;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
+  text-align: center;
+}
+
+.freedom-del {
+  position: absolute;
+  display: none;
+  width: 0em;
+  height: 0.2em;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
+  background-color: #f80000;
+  -webkit-transform: translate(1.3em, 0px) rotate(15deg);
+  -ms-transform: translate(1.3em, 0px) rotate(15deg);
+  transform: translate(1.3em, 0px) rotate(15deg);
+}
+
+.body-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.navigation-items {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.logo-link {
+  z-index: 1;
+  display: none;
+}
+
+.logo-link:hover {
+  opacity: 0.8;
+}
+
+.logo-link:active {
+  opacity: 0.7;
+}
+
+.navigation-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: -20px;
+  margin-left: auto;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+}
+
+.hello {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+.greeting {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emoji {
+  display: block;
+  overflow: visible;
+}
+
+.hindi {
+  display: none;
+}
+
+.japanese {
+  display: none;
+}
+
+.thai {
+  display: none;
+}
+
+.khmer {
+  display: none;
+}
+
+.korean {
+  display: none;
+}
+
+.malayalam {
+  display: none;
+}
+
+.chinese {
+  display: none;
+}
+
+.english {
+  display: none;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.asterisk {
+  position: static;
+  display: none;
+  padding-top: 0.3em;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  -ms-grid-row-align: auto;
+  align-self: auto;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
+  font-size: 2em;
+  text-decoration: none;
+  cursor: help;
+}
+
+.link {
+  color: #333;
+  font-style: normal;
+  text-decoration: none;
+  cursor: help;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.navigation {
+  position: relative;
+  display: none;
+  max-width: 940px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.logo-image {
+  display: block;
+}
+
+.navigation-item {
+  padding-top: 9px;
+  padding-bottom: 9px;
+  opacity: 0.6;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: lowercase;
+}
+
+.navigation-item:hover {
+  opacity: 0.9;
+}
+
+.navigation-item:active {
+  opacity: 0.8;
+}
+
+.navigation-item.w--current {
+  opacity: 1;
+  color: #1a1b1f;
+  font-weight: 600;
+}
+
+.navigation-item.w--current:hover {
+  opacity: 0.8;
+  color: #32343a;
+}
+
+.navigation-item.w--current:active {
+  opacity: 0.7;
+  color: #32343a;
+}
+
+.html-embed {
+  position: absolute;
+}
+
+.container {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.collection-list-wrapper {
+  position: static;
+  display: none;
+}
+
+.section {
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.name-frad-lee {
+  margin-top: 5px;
+  margin-right: 0.2em;
+  margin-bottom: 15px;
+}
+
+.name-frad-lee.lee {
+  text-transform: uppercase;
+}
+
+.name {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: auto;
+}
+
+.description {
+  width: 50%;
+  font-size: 1.2em;
+  line-height: 1.4em;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+@media (max-width: 991px) {
+  .explanation {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .navigation-items {
+    background-color: #fff;
+  }
+  .logo-link.w--current {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+  .navigation-wrap {
+    margin-right: 0px;
+  }
+  .menu-button {
+    padding: 0px;
+  }
+  .menu-button.w--open {
+    background-color: transparent;
+  }
+  .menu-icon {
+    display: block;
+  }
+  .navigation {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .navigation-item {
+    padding: 15px 30px;
+    -webkit-transition: background-color 400ms ease, opacity 400ms ease, color 400ms ease;
+    transition: background-color 400ms ease, opacity 400ms ease, color 400ms ease;
+    text-align: center;
+  }
+  .navigation-item:hover {
+    background-color: #f7f8f9;
+  }
+  .navigation-item:active {
+    background-color: #eef0f3;
+  }
+}
+
+@media (max-width: 767px) {
+  h1 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 32px;
+    line-height: 38px;
+  }
+  h4 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .explanation {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .logo-link {
+    padding-left: 0px;
+  }
+  .asterisk {
+    padding-top: 0.4em;
+  }
+  .hero {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .navigation {
+    position: static;
+    display: none;
+    padding: 20px 30px;
+  }
+  .section {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  .description {
+    font-size: 1.1em;
+    line-height: 1.25em;
+  }
+}
+
+@media (max-width: 479px) {
+  h4 {
+    font-size: 2em;
+  }
+  .main {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding-right: 20px;
+    padding-left: 20px;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    -webkit-box-ordinal-group: 1;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    text-align: left;
+  }
+  .body {
+    font-size: 1em;
+    line-height: 1.6em;
+  }
+  .explanation {
+    padding-right: 20px;
+    padding-left: 20px;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 auto;
+    -ms-flex: 0 auto;
+    flex: 0 auto;
+    text-align: left;
+  }
+  .menu-button {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .menu-button.w--open {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .greeting {
+    font-size: 0.5em;
+  }
+  .english {
+    font-family: 'PT Sans', sans-serif;
+  }
+  .asterisk {
+    padding-top: 0.3em;
+  }
+  .hero {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .navigation {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .description {
+    width: 80%;
+  }
+}
+
