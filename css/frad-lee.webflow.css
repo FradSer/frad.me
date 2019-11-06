@@ -24,6 +24,12 @@ p {
   line-height: 29px;
 }
 
+a {
+  color: #333;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 strong {
   font-weight: bold;
 }
@@ -599,3 +605,4 @@ strong {
     align-items: center;
   }
 }
+
