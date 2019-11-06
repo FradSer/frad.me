@@ -187,11 +187,6 @@ strong {
   display: flex;
 }
 
-.emoji {
-  display: block;
-  overflow: visible;
-}
-
 .hindi {
   display: none;
 }
