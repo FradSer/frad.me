@@ -355,13 +355,13 @@ strong {
   margin-left: auto;
 }
 
-.name-frad-lee {
+.name-english {
   margin-top: 5px;
   margin-right: 0.2em;
   margin-bottom: 15px;
 }
 
-.name-frad-lee.lee {
+.name-english.lee {
   text-transform: uppercase;
 }
 
@@ -370,7 +370,6 @@ strong {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-right: auto;
 }
 
 .description {
