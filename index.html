@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Wed Nov 06 2019 09:07:23 GMT+0000 (UTC)  -->
+<!--  Last Published: Wed Nov 06 2019 16:39:33 GMT+0000 (UTC)  -->
 <html data-wf-page="5dbdc06f5ad64f00267ff177" data-wf-site="5daabce78bfff6792d1293c7">
 <head>
   <meta charset="utf-8">
@@ -19,15 +19,42 @@
   <script src="https://kit.fontawesome.com/02675c9c80.js" crossorigin="anonymous"></script>
 </head>
 <body class="body">
-  <div class="html-embed w-embed w-script">
-    <div id="container"></div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r83/three.js"></script>
-    <script id="vertexShader" type="x-shader/x-vertex">
+  <div class="section">
+    <div class="container w-container">
+      <div class="hero">
+        <div class="greeting">
+          <div class="hello">
+            <h4 data-w-id="5ec6964d-73f0-6a23-7af6-cd39fabe77e4" class="emoji">👋</h4>
+            <h4 data-w-id="c05d349d-c27f-dd1f-255a-bf952d1a8eec" class="english">Hi there</h4>
+            <h4 data-w-id="f732d4d7-c9be-6f65-554b-d001d68b77c8" class="chinese"><strong>你好</strong></h4>
+            <h4 data-w-id="4fe2563b-39e4-ba98-7b75-8ff2bd08a5d3" class="malayalam"><strong>ഹലോ</strong></h4>
+            <h4 data-w-id="5fb76d01-27be-7adc-8c94-12b76da2b65b" class="hindi"><strong>नमस्ते</strong></h4>
+            <h4 data-w-id="bdc6f3fd-f8ad-5b20-3d08-3a75f80e04d6" class="japanese"><strong>こんにちは</strong></h4>
+            <h4 data-w-id="0c53200c-3454-e546-f50a-9b21d55fc966" class="thai"><strong>สวัสดี</strong></h4>
+            <h4 data-w-id="ac3f9c0d-53ca-a2ba-e5bb-cbe7dd968c4f" class="khmer"><strong>សួស្តី</strong></h4>
+            <h4 data-w-id="0f1d7c18-e513-5392-73f5-086bee60cec3" class="korean"><strong>안녕하세요</strong></h4>
+          </div>
+          <h4>, I&#x27;m</h4>
+        </div>
+        <div class="name">
+          <h1 class="name-frad-lee frad">Frad</h1>
+          <h1 class="name-frad-lee lee">LEE</h1>
+          <div class="asterisk"><a href="#" class="link">*</a></div>
+        </div>
+        <div class="description">
+          <p>A self-taught crafter who eager to learn for advancement. Whether it&#x27;s <span class="underline">coding with a new language</span>, <span class="underline">design with any tools whatsoever</span> or <span class="underline">building a startup.</span><br></p>
+          <p>Now in gap and seeking for opportunities as <span class="underline">product designer</span> of the next great journey. </p>
+        </div>
+      </div>
+      <div class="html-embed w-embed w-script">
+        <div id="container"></div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r83/three.js"></script>
+        <script id="vertexShader" type="x-shader/x-vertex">
   void main() {
       gl_Position = vec4( position, 1.0 );
   }
 </script>
-    <script id="fragmentShader" type="x-shader/x-fragment">
+        <script id="fragmentShader" type="x-shader/x-fragment">
   // Author: Frad Lee
   // Title: Circle Wave
   // Version 2
@@ -91,17 +118,17 @@
           st.y*=u_resolution.y/u_resolution.x;
       };
       // move space from the center to the vec2(0.0)
-      st-=vec2(.75, 0.52);
+      st-=vec2(.5);
       // rotate the spacec
       st*=rotate2d(u_time*PI*.05);
       // move it back to the original place
       st+=vec2(.5);
       vec3 color=vec3(1.);
-      color*=shapeBorder(st,.25,.035);
+      color*=shapeBorder(st,.6,.035);
       gl_FragColor=vec4(color,.2);
   }
 </script>
-    <script>
+        <script>
   var container;
   var camera, scene, renderer;
   var uniforms;
@@ -136,7 +163,7 @@
     };
   }
   function onWindowResize(event) {
-    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setSize(400, 400);
     uniforms.u_resolution.value.x = renderer.domElement.width;
     uniforms.u_resolution.value.y = renderer.domElement.height;
   }
@@ -149,33 +176,6 @@
     renderer.render(scene, camera);
   }
 </script>
-  </div>
-  <div class="section">
-    <div class="container w-container">
-      <div class="hero">
-        <div class="greeting">
-          <div class="hello">
-            <h4 data-w-id="5ec6964d-73f0-6a23-7af6-cd39fabe77e4" class="emoji">👋</h4>
-            <h4 data-w-id="c05d349d-c27f-dd1f-255a-bf952d1a8eec" class="english">Hi there</h4>
-            <h4 data-w-id="f732d4d7-c9be-6f65-554b-d001d68b77c8" class="chinese"><strong>你好</strong></h4>
-            <h4 data-w-id="4fe2563b-39e4-ba98-7b75-8ff2bd08a5d3" class="malayalam"><strong>ഹലോ</strong></h4>
-            <h4 data-w-id="5fb76d01-27be-7adc-8c94-12b76da2b65b" class="hindi"><strong>नमस्ते</strong></h4>
-            <h4 data-w-id="bdc6f3fd-f8ad-5b20-3d08-3a75f80e04d6" class="japanese"><strong>こんにちは</strong></h4>
-            <h4 data-w-id="0c53200c-3454-e546-f50a-9b21d55fc966" class="thai"><strong>สวัสดี</strong></h4>
-            <h4 data-w-id="ac3f9c0d-53ca-a2ba-e5bb-cbe7dd968c4f" class="khmer"><strong>សួស្តី</strong></h4>
-            <h4 data-w-id="0f1d7c18-e513-5392-73f5-086bee60cec3" class="korean"><strong>안녕하세요</strong></h4>
-          </div>
-          <h4>, I&#x27;m</h4>
-        </div>
-        <div class="name">
-          <h1 class="name-frad-lee frad">Frad</h1>
-          <h1 class="name-frad-lee lee">LEE</h1>
-          <div class="asterisk"><a href="#" class="link">*</a></div>
-        </div>
-        <div class="description">
-          <p>A self-taught crafter who eager to learn for advancement. Whether it&#x27;s <span class="underline">coding with a new language</span>, <span class="underline">design with any tools whatsoever</span> or <span class="underline">building a startup.</span><br></p>
-          <p>Now in gap and seeking for opportunities as <span class="underline">product designer</span> of the next great journey. </p>
-        </div>
       </div>
       <div class="explanation">
         <div data-w-id="d229f29e-36e1-c904-8123-3516c824f3f0" class="freedom-to-frad">
@@ -191,6 +191,9 @@
         <div>PREVIOUSLY AT</div>
       </div>
     </div>
+  </div>
+  <div data-w-id="573aaf58-4a84-78f6-a8d7-d98103493461" class="section works">
+    <div class="container w-container"></div>
   </div>
   <div class="collection-list-wrapper w-dyn-list">
     <div class="w-dyn-items">
