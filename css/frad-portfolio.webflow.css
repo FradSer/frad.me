@@ -2,7 +2,7 @@ h1 {
   margin-top: 20px;
   margin-bottom: 10px;
   font-family: 'PT Serif', serif;
-  color: rgba(51, 51, 51, 0.9);
+  color: rgba(51, 51, 51, 0.95);
   line-height: 42px;
 }
 
@@ -30,6 +30,7 @@ strong {
 }
 
 .body {
+  display: block;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -246,6 +247,7 @@ strong {
 }
 
 .hero {
+  width: 60%;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
@@ -311,19 +313,17 @@ strong {
 }
 
 .html-embed {
-  position: absolute;
+  width: 50%;
+  height: 400px;
 }
 
 .container {
-  position: absolute;
-  left: 0%;
-  top: 0%;
-  right: 0%;
-  bottom: 0%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  height: 900px;
+  min-height: 479px;
   margin-right: auto;
   margin-left: auto;
   -webkit-box-pack: center;
@@ -346,6 +346,13 @@ strong {
   margin-left: 30px;
 }
 
+.section.works {
+  display: none;
+  height: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .name-frad-lee {
   margin-top: 5px;
   margin-right: 0.2em;
@@ -365,15 +372,20 @@ strong {
 }
 
 .description {
-  width: 50%;
   font-size: 1.2em;
   line-height: 1.4em;
 }
 
 .underline {
-  color: rgba(51, 51, 51, 0.95);
+  color: rgba(51, 51, 51, 0.98);
   font-weight: 700;
   cursor: crosshair;
+}
+
+.div-block {
+  width: 100%;
+  height: 155%;
+  background-color: #200000;
 }
 
 @media (max-width: 991px) {
@@ -442,32 +454,68 @@ strong {
   .logo-link {
     padding-left: 0px;
   }
+  .greeting {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
   .asterisk {
     padding-top: 0.4em;
   }
   .hero {
-    padding-right: 30px;
-    padding-left: 30px;
+    width: 100%;
+    margin-top: 20%;
+    padding-right: 15px;
+    padding-left: 15px;
+    -webkit-align-self: flex-start;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
   }
   .navigation {
     position: static;
     display: none;
     padding: 20px 30px;
   }
+  .html-embed {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 400px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .container {
+    display: block;
+    height: 100%;
+  }
   .section {
     margin-right: 15px;
     margin-left: 15px;
   }
+  .name {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
   .description {
+    width: 100%;
     font-size: 1.1em;
     line-height: 1.25em;
+    text-align: center;
   }
 }
 
 @media (max-width: 479px) {
-  h4 {
-    font-size: 2em;
-  }
   .main {
     display: -webkit-box;
     display: -webkit-flex;
@@ -532,15 +580,22 @@ strong {
     padding-top: 0.3em;
   }
   .hero {
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 5px;
+    padding-left: 5px;
   }
   .navigation {
     padding-right: 20px;
     padding-left: 20px;
   }
-  .description {
-    width: 80%;
+  .html-embed {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 }
 
